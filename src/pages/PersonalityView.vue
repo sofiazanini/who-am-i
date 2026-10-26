@@ -20,7 +20,7 @@
         class="hover:opacity-70 transition-opacity cursor-pointer flex items-center gap-2"
         @click="returnToStory"
       >
-        <span>←</span> torna indietro
+        <span>←</span> TORNA INDIETRO
       </button>
       <span>// Personalità</span>
     </header>

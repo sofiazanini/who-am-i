@@ -18,7 +18,7 @@
         class="flex cursor-pointer items-center gap-2 transition-opacity hover:opacity-60"
         @click="returnToStory"
       >
-        <span aria-hidden="true">←</span> torna indietro
+        <span aria-hidden="true">←</span> TORNA INDIETRO
       </button>
       <span class="text-white/55">// {{ group.label }}</span>
     </header>
