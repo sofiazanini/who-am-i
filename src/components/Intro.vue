@@ -1,7 +1,5 @@
 <template>
   <div ref="introRef" class="fixed inset-0 z-999 bg-black text-white flex items-center justify-center px-6">
-    <GridHover />
-
     <div class="relative z-10 w-full max-w-2xl px-4 text-center">
       <h1 
         ref="textRef"
@@ -18,7 +16,6 @@
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin'
-import GridHover from './GridHover.vue'
 
 gsap.registerPlugin(ScrambleTextPlugin)
 

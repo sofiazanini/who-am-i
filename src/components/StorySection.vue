@@ -17,7 +17,7 @@
       </div>
 
       <div class="relative z-10 mx-auto flex min-h-[calc(100vh-8rem)] w-full max-w-[1600px] flex-col">
-        <h2 class="story-title mt-[8vh] text-center font-display text-[12vw] font-light leading-[0.9] tracking-[-0.065em] md:mt-[5vh] md:text-[8.5vw]">
+        <h2 class="story-title mt-[8vh] text-center font-display text-[12vw] font-light leading-[0.9] tracking-[-0.05em] md:mt-[5vh] md:text-[8.5vw]">
           Chi è Sofia?
         </h2>
 
@@ -28,7 +28,7 @@
               :key="word.label"
               :ref="setWordRef"
               type="button"
-              class="keyword-chip relative font-display font-light leading-none tracking-[-0.055em] text-white"
+              class="keyword-chip relative font-display font-light leading-none tracking-[-0.05em] text-white"
               :class="[
                 word.size,
                 { 'is-dimmed': activeCategory && activeCategory !== group.id },

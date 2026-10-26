@@ -1,13 +1,23 @@
 <template>
   <main class="h-screen w-screen overflow-hidden bg-black text-white relative select-none flex items-center justify-center">
-    <GridHover />
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-0 opacity-40">
+      <PixelBlast
+        className="h-full w-full"
+        color="#B19EEF"
+        :pixelSize="4"
+        :patternScale="2"
+        :patternDensity="0.8"
+        :speed="0.35"
+        :edgeFade="0.1"
+      />
+    </div>
 
     <!-- Container principale -->
     <div class="relative w-full h-full flex items-center justify-center z-10 pointer-events-none px-4">
       
       <!-- Badge pixelato in alto a sinistra -->
-      <div ref="pixelBadge" class="absolute left-[20%] md:left-[27%] top-[22%] md:top-[15%] pointer-events-auto cursor-default z-20 w-[14vw] md:w-[15vw] max-w-lg invert ">
-        <img src="/assets/home/pixel-badge.png" class="w-full h-auto object-contain hover:bg-white -rotate-6 animate-pulse" alt="Pixel Badge" draggable="false" />
+      <div ref="pixelBadge" class="absolute left-[20%] md:left-[27%] top-[22%] md:top-[15%] pointer-events-auto cursor-default z-20 w-[14vw] md:w-[18vw] max-w-lg invert ">
+        <img src="/assets/home/pixel-badge.png" class="w-full h-auto object-contain -rotate-6 animate-pulse" alt="Pixel Badge" draggable="false" />
       </div>
 
       <!-- Immagine Camera (destra) -->
@@ -36,7 +46,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import gsap from 'gsap'
-import GridHover from '../components/GridHover.vue'
+import PixelBlast from '../components/PixelBlast.vue'
 import StorySection from '../components/StorySection.vue'
 
 const rightImg = ref(null)
