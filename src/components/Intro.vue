@@ -1,5 +1,17 @@
 <template>
   <div ref="introRef" class="fixed inset-0 z-999 bg-black text-white flex items-center justify-center px-6">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-0 opacity-65">
+      <PixelBlast
+        className="h-full w-full"
+        color="#B19EEF"
+        :pixelSize="4"
+        :patternScale="2"
+        :patternDensity="0.8"
+        :speed="0.35"
+        :edgeFade="0.1"
+      />
+    </div>
+
     <div class="relative z-10 w-full max-w-2xl px-4 text-center">
       <h1 
         ref="textRef"
@@ -16,6 +28,7 @@
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin'
+import PixelBlast from './PixelBlast.vue'
 
 gsap.registerPlugin(ScrambleTextPlugin)
 
