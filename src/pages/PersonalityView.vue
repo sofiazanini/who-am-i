@@ -111,9 +111,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="relative z-20 flex items-center justify-between font-mono text-[10px] text-white/40 md:text-xs">
-      <span>sofia zanini — portfolio</span>
-      <span>[personality]</span>
+        <footer class="relative z-20 flex shrink-0 items-center justify-between border-t border-white/10 pt-5 font-mono text-[10px] text-white/40 md:text-xs">
+      <p>sofia zanini — portfolio</p>
+      <p>[{{ group.id }}]</p>
     </footer>
   </section>
 </template>
@@ -123,7 +123,7 @@ import { inject, ref, reactive, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import PixelBlast from '../components/PixelBlast.vue'
 
-defineProps({
+const props = defineProps({
   group: {
     type: Object,
     required: true,
@@ -145,7 +145,7 @@ function setTraitRef(el, index) {
 }
 
 function returnToStory() {
-  navigateWithTransition({ name: 'home' }, '#f2565b')
+  navigateWithTransition({ name: 'home' }, props.group.color)
 }
 
 // Calcola il centro esatto della card rispetto al contenitore per le linee SVG

@@ -31,7 +31,7 @@ const showIntro = ref(sessionStorage.getItem(INTRO_KEY) !== 'true') // se già v
 const router = useRouter()
 const transitionRef = ref(null)
 const transitionVisible = ref(false)
-const transitionColor = ref('#f2565b')
+const transitionColor = ref('#8A81E1')
 let isTransitioning = false
 
 function finishIntro() {
@@ -60,8 +60,7 @@ async function navigateWithTransition(route, color) {
   }
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  // Modifica questo valore (in secondi) per regolare la velocità della transizione.
-  const duration = reducedMotion ? 0.01 : 1.2
+  const duration = reducedMotion ? 0.01 : 1
   gsap.set(curtain, { height: '6px', y: 0, scaleX: 1, transformOrigin: 'left bottom' })
 
   try {
