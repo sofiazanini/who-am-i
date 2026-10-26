@@ -17,24 +17,24 @@
       
       <!-- Badge pixelato in alto a sinistra -->
       <div ref="pixelBadge" class="absolute left-[20%] md:left-[27%] top-[22%] md:top-[15%] pointer-events-auto cursor-default z-20 w-[14vw] md:w-[18vw] max-w-lg invert ">
-        <img src="/assets/home/pixel-badge.png" class="w-full h-auto object-contain -rotate-6 animate-pulse" alt="Pixel Badge" draggable="false" />
+        <img src="/assets/home/pixel-badge.png" class="w-full h-auto object-contain -rotate-6" alt="Pixel Badge" draggable="false" />
       </div>
 
       <!-- Immagine Camera (destra) -->
-      <div ref="rightImg" class="absolute right-[22%] md:right-[17%] top-[18%] md:top-[14%] pointer-events-auto cursor-crosshair transition-filter duration-50 ease-out hover:invert w-[36vw] md:w-[28vw] max-w-lg z-20">
+      <div ref="rightImg" class="absolute right-[22%] md:right-[17%] top-[18%] md:top-[14%] pointer-events-auto cursor-crosshair transition-filter duration-50 ease-out w-[36vw] md:w-[28vw] max-w-lg z-20">
         <img src="/assets/home/img-camera.png" class="w-full h-auto object-contain rotate-3" alt="Camera ASCII" draggable="false" />
       </div>
 
       <!-- Immagine Computer (sinistra) -->
-      <div ref="computerImg" class="absolute left-[22%] md:left-[17%] top-[45%] md:top-[50%] pointer-events-auto cursor-crosshair transition-filter duration-50 ease-out hover:invert w-[36vw] md:w-[28vw] max-w-lg z-30">
+      <div ref="computerImg" class="absolute left-[22%] md:left-[17%] top-[45%] md:top-[50%] pointer-events-auto cursor-crosshair transition-filter duration-50 ease-out w-[36vw] md:w-[28vw] max-w-lg z-30">
         <img src="/assets/home/img-computer.png" class="w-full h-auto object-contain -rotate-2" alt="Computer ASCII" draggable="false" />
       </div>
 
       <!-- Nome su due righe al centro -->
       <div class="absolute left-[35%] top-[41%] z-40 text-left pointer-events-auto cursor-default">
         <h1 class="font-display text-[12vw] md:text-[12vw] leading-[0.86] font-light tracking-[-0.05em] normal-case">
-          <span class="inline-block bg-black px-5 translate-x-[40%] mb-5 hover:invert">Sofia</span>
-          <span class="block bg-black px-5 hover:invert">Zanini</span>
+          <span class="inline-block bg-black px-5 translate-x-[40%] mb-5">Sofia</span>
+          <span class="block bg-black px-5">Zanini</span>
         </h1>
       </div>
 
