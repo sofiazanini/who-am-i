@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+# Sofia Zanini
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Portfolio personale pensato per raccontare chi sono e il mio modo di lavorare.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Un sito semplice, curato e coinvolgente, creato per presentare progetti, idee e il mio percorso creativo in modo diretto e moderno.
 
-Esame Web Design II
+## Obiettivo
+
+Mostrare il mio lavoro con una forte attenzione alla grafica, all'atmosfera e alla narrazione visiva.
+
+## Come vederlo
+
+Apri il progetto nel browser e scopri il portfolio completo.
+
+## Stile
+
+L'esperienza è costruita per essere immediata, elegante e piena di personalità, con un approccio visivo contemporaneo.
